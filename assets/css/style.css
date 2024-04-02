@@ -26,6 +26,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
+  font-family: var(--font);
   height: 100vh;
   background-color: var(--tertiary);
   margin: auto;
@@ -34,6 +35,7 @@ header {
     background-color: greenyellow;
     display: flex;
     padding: 0 2rem;
+    font-weight: 700;
     /* align-items: center; */
     justify-content: space-between;
     height: 120px;
@@ -61,8 +63,45 @@ header {
           text-transform: uppercase;
         }
       }
+    }
+  }
 
-     
+  /* estilo do slider */
+  & .slider {
+    flex: 1;
+    overflow: hidden;
+    /* width: 500px; */
+
+    & .slider--controls {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+
+      & .slider--control {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    }
+
+    & .slider--width {
+      height: 100%;
+      display: flex;
+      transition: all ease 0.3s;
+    }
+  
+    & .slider--item {
+      width: 100vw;
+      height: inherit;  /* para herdar a altura do pai */
+      background-position: center;
+      background-size: cover;
     }
   }
 }
