@@ -24,12 +24,14 @@ a {
 
 header {
   display: flex;
+  /* align-items: center; */
   flex-direction: column;
-  max-width: 1200px;
+  width: 1000px;
   font-family: var(--font);
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--tertiary);
   margin: auto;
+  gap: 20px;
   
   & .menu {
     background-color: greenyellow;
@@ -68,18 +70,19 @@ header {
 
   /* estilo do slider */
   & .slider {
-    flex: 1;
+    width: 100%;
+    height: 500px;
     overflow: hidden;
     /* width: 500px; */
 
     & .slider--controls {
       position: absolute;
       z-index: 99;
-      width: 100%;
+      /* width: 100%; */
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
+      /* max-width: 1200px; */
 
       & .slider--control {
         width: 50px;
@@ -102,6 +105,12 @@ header {
       height: inherit;  /* para herdar a altura do pai */
       background-position: center;
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--tertiary);
+      text-shadow: 0px 1px 1px var(--black);
+      font-size: 50px;
     }
   }
 }

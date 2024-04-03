@@ -1,7 +1,9 @@
 let totalSlids = document.querySelectorAll('.slider--item').length;
-let currentSlid = 0
+let currentSlid = 0;
+let sliderWidth = document.querySelector('.slider').clientWidth;
 
-document.querySelector('.slider--width').style.width = `calc(100vw * ${totalSlids})`;
+document.querySelector('.slider--width').style.width = `${sliderWidth * totalSlids}px`;
+document.querySelector('.slider--controls').style.width = `${sliderWidth}px`;
 document.querySelector('.slider--controls').style.height = `${document.querySelector('.slider').clientHeight}px`;
 
 const goPrev = () => {
@@ -20,8 +22,9 @@ currentSlid++
 }
 
 const upadateMargin = () => {
-  let newMargin = (currentSlid * document.body.clientWidth)
+  let sliderItemWidth = document.querySelector('.slider--item').clientWidth
+  let newMargin = (currentSlid * sliderItemWidth)
   document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
 }
 
-setInterval(goNext, 3000)
+setInterval(goNext, 5000)
