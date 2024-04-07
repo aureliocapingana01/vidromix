@@ -1,50 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Para reset o css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
 
-  <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <title>Vidromix</title>
-</head>
-<body>
-  <header>
-    <div class="menu">
-      <div id="logo"></div>
-      <nav class="menunav">
-        <ul>
-          <li><a href="#">pagina inical</a></li>
-          <li><a href="#">Nossos Serviços</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="slider">
-      <div class="slider--controls">
-        <div class="slider--control" onclick="goPrev()" >voltar</div>
-        <div class="slider--control" onclick="goNext()" >proxíma</div>
+    <!-- Links para usar icones do fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+      integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+
+    <script src="assets/js/script.js" defer></script>
+
+    <title>Vidromix</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div id="logo"></div>
+        <nav class="menunav">
+          <ul>
+            <li><a href="#" class="fa fa-home"></a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossos Serviços</a></li>
+            <li><a href="#">Portifolio</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="slider--width">
-        <div class="slider--item" style="background-image:url('assets/img/vidromis\ img.jpg');">
+      <div class="slider">
+        <div class="slider--controls">
+          <button class="slider--control" onclick="goPrev()">
+            <img src="assets/img/small-left.png" alt="" />
+          </button>
+          <button class="slider--control" onclick="goNext()">
+            <img src="assets/img/small-right.png" alt="" />
+          </button>
+          <!-- <div class="slider--control" onclick="goPrev()">voltar</div> -->
+          <!-- <div class="slider--control" onclick="goNext()">proxíma</div> -->
         </div>
-        <div class="slider--item" style="background-image:url('assets/img/img2.jpg');">
-          Vidromex - soluções de qualidade
-        </div>
-        <div class="slider--item" style="background-image:url('assets/img/img3.jpg');">
-          Vidromex - soluções de qualidade
+        <div class="slider--width">
+          <div class="slider--item um"></div>
+          <div class="slider--item dois">
+            <!-- Vidromex - soluções de qualidade -->
+          </div>
+          <div class="slider--item tres">
+            <!-- Vidromex - soluções de qualidade -->
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <section>
-      Resto do site
-    </section>
-  </main>
-  <footer></footer>
-</body>
+    </header>
+    <main>
+      <section class="sobre-nos">
+        <div class="sobre-nos-container">
+          <span>Atendemos Caxias do Sul e região.</span>
+          <p>
+            Há mais de x anos no mercado, a Vidraçaria
+            <strong>Vidromix</strong> vem trabalhando com qualidade buscando a
+            satisfação dos clientes, cumprindo com a sua responsablidade horando
+            assim os seus bons profissionais. Bom atendimento, pontualidade,
+            rapidez, eficiência, qualidade, segurança, e boa comunicação para
+            com todos, tanto no atacado, como no varejo. Todo o crescimednto da
+            Vidromax é do bom relacionamento com seus clientes e com toda sua
+            equipe e fornecedores. Dando sempre o seu melhor para aclher todos
+            que se achegarem.
+            <strong>Voces são o segredo do nosso sucesso!</strong>
+          </p>
+        </div>
+      </section>
+
+      <section class="servicos-produtos">
+        <div class="servicos">
+          <div class="servicos-item-left">
+            <h2>Serviços</h2>
+            <div class="bar"></div>
+            <ul>
+              <li>Box</li>
+              <li>Cobertura</li>
+              <li>Cerca de vidro</li>
+              <li>Divisória</li>
+              <li>Espelho facetado</li>
+              <li>Espelho lapidados</li>
+              <li>Vitrine</li>
+            </ul>
+          </div>
+
+          <div class="servicos-item-right">
+            <h2>Tipos de vidros</h2>
+            <div class="bar"></div>
+            <ul>
+              <li>Acidato</li>
+              <li>Fantasias</li>
+              <li>Laminados</li>
+              <li>Pintados</li>
+              <li>Incolor</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Portifolio -->
+        <div class="portifolio">
+          <div class="portifolio-container">
+            <h2>Trabalhos Realizados</h2>
+            <div class="bar"></div>
+            
+            <div class="images">
+              <figure><img src="/assets/img/Imagem 1.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 2.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 3.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 4.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 5.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 6.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 7.jpg" alt=""></figure>
+              <figure><img src="/assets/img/Imagem 8.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
