@@ -148,6 +148,7 @@ main {
     padding: 5rem 10rem;
     background: var(--primary);
     margin: auto;
+    /* gap: 2rem; */
 
     & .sobre-nos-container {
       max-width: 1120px;
@@ -156,7 +157,6 @@ main {
         font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 2rem;
-        /* background-color: red; */
         display: block;
       }
 
@@ -166,46 +166,101 @@ main {
         line-height: 25px;
       }
     }
+
+    /* Estilo sobre nos cards */
+    & .sobre-nos-cards {
+      display: flex;
+      /* background-color: red; */
+      gap: 2rem;
+      margin-top: 2rem;
+
+      & .sobre-nos-card-visao,
+      & .sobre-nos-card-missao,
+      & .sobre-nos-card-valores {
+        border: 1px solid var(--tertiary);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        background: var(--secondary);
+
+        & > h3 {
+          font-size: 1.2rem;
+          /* color: #FFF; */
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+        
+        & > p{
+          font-size: 1.1rem;
+          /* text-align: justify; */
+        }
+      }
+    }
   }
 
   /* Estio Produtos e servicos */
   & .servicos-produtos {
     display: flex;
     flex-direction: column;
-
+    
     & .servicos {
       display: flex;
-      max-width: 1120px;
+      width: 1120px;
+      /* padding: 5rem 10rem; */
+      margin: auto;
+      flex-direction: row;
+      /* align-items: center; */
       justify-content: space-between;
-      padding: 5rem 10rem;
+      padding: 5rem 2rem ;
+      /* background: yellow; */
+      gap: 2rem; 
 
-      & .servicos-item-left,
-      & .servicos-item-right {
-        & > h2 {
-          font-size: 1.8rem;
-          font-weight: 700;
-        }
+      & .servicos-itens {
+        /* background: red; */
+        display: flex;
+        /* flex-direction: column; */
+        gap: 2rem;
 
-        & .bar {
-          width: 70px;
-          height: 5px;
-          background: var(--primary);
-          margin: 0.5rem 0 1.5rem 0;
-          border-radius: 5px;
-        }
-        
-        & ul {
-          list-style-type: "\2714\00A0\00A0";
-          list-style-position: inside;
+        & .servicos-item-left,
+        & .servicos-item-right {
+          & > h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+          }
+  
+          & .bar {
+            width: 70px;
+            height: 5px;
+            background: var(--primary);
+            margin: 0.5rem 0 1.5rem 0;
+            border-radius: 5px;
+          }
           
-          & li {
-            line-height: 22px;
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-transform: uppercase;
+          & ul {
+            list-style-type: "\2714\00A0\00A0";
+            list-style-position: inside;
+            
+            & li {
+              line-height: 22px;
+              font-size: 1.2rem;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
           }
         }
       }
+
+      /* Estilo do servicos videos */
+      & .servicos-videos {
+        display: flex;
+        gap: 2rem;
+
+        & > video {
+          width: 200px;
+          border-radius: 5px;
+        }
+      }
+
     }
     
     /* Estilo do portifolio */
@@ -213,7 +268,6 @@ main {
       display: flex;
       flex-direction: column;
       overflow: clip;
-      /* gap: 3rem; */
       background: var(--tertiary);
       
       & .portifolio-container {
@@ -234,10 +288,11 @@ main {
           background: var(--primary);
           margin: 0.5rem 0 1.5rem 0;
           border-radius: 5px;
+
         }
   
         & .images {
-          /* max-width: %; */
+          /* text-align: center; */
           column-count: 4;
           column-gap: 2rem;
           /* margin: -1rem; */
