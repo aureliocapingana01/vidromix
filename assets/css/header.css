@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  height: 100vh;
+
+  & .menu {
+    gap: 20px;
+    max-width: 1120px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    padding: 1rem 10rem;
+    font-weight: 700;
+    justify-content: space-between;
+
+    & #logo {
+      background-image: url("/assets/img/vidromix-logo.jpg");
+      width: 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: none;
+    }
+    & .menunav {
+      display: flex;
+      justify-content: space-around;
+
+      & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        & li {
+          list-style: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  /* estilo do slider */
+  & .slider {
+    flex: 1;
+    overflow: hidden;
+
+    & .slider--controls {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* max-width: 1200px; */
+
+      & .slider--control {
+        width: 50px;
+        height: 50px;
+        color: var(--black);
+        background-color: var(--tertiary);
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    }
+
+    & .slider--width {
+      height: 100%;
+      display: flex;
+      transition: all ease 0.3s;
+    }
+
+    & .um {
+      background-image: url("/assets/img/image1.jpg");
+      background-repeat: no-repeat;
+      /* background-position: center; */
+      background-size: cover;
+    }
+    & .dois {
+      background-image: url("/assets/img/image10.jpg");
+      background-repeat: no-repeat;
+      /* background-position: center; */
+      background-size: cover;
+    }
+    & .tres {
+      background-image: url("/assets/img/image15.jpg");
+      background-repeat: no-repeat;
+      /* background-position: center; */
+      background-size: cover;
+    }
+
+    & .slider--item {
+      width: 100vw;
+      height: inherit; /* para herdar a altura do pai */
+      background-position: center;
+    }
+  }
+}

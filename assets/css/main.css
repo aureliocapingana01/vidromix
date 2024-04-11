@@ -1,0 +1,295 @@
+:root {
+  --primary: #4c876f;
+  --secondary: #4a8eab;
+  --tertiary: #b2b2b2;
+  --black: #00050f;
+
+  /* --color-light : #f8fafc;
+  --color-dark-50 : #797984;
+  --color-dark-100 : #312d37;
+  --color-black : #000; */
+
+  --font: "Inter", sans-serif;
+}
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  /* Estilo sobre nos */
+  & .sobre-nos {
+    padding: 5rem 10rem;
+    background: var(--primary);
+    margin: auto;
+
+    & .sobre-nos-container {
+      max-width: 1120px;
+
+      & > span {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        display: block;
+      }
+
+      & > p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 25px;
+      }
+    }
+
+    /* Estilo sobre nos cards */
+    & .sobre-nos-cards {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+
+      & .sobre-nos-card-visao,
+      & .sobre-nos-card-missao,
+      & .sobre-nos-card-valores {
+        border: 1px solid var(--tertiary);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        background: var(--secondary);
+
+        & > h3 {
+          font-size: 1.2rem;
+          /* color: #FFF; */
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+        
+        & > p{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  /* Estio Produtos e servicos */
+  & .servicos-produtos {
+    display: flex;
+    flex-direction: column;
+    
+    & .servicos {
+      display: flex;
+      width: 1120px;
+      margin: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5rem 2rem ;
+      gap: 2rem; 
+
+      & .servicos-itens {
+        display: flex;
+        gap: 2rem;
+
+        & .servicos-item-left,
+        & .servicos-item-right {
+          & > h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+          }
+  
+          & .bar {
+            width: 70px;
+            height: 5px;
+            background: var(--primary);
+            margin: 0.5rem 0 1.5rem 0;
+            border-radius: 5px;
+          }
+          
+          & ul {
+            list-style-type: "\2714\00A0\00A0";
+            list-style-position: inside;
+            
+            & li {
+              line-height: 22px;
+              font-size: 1.2rem;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      /* Estilo do servicos videos */
+      & .servicos-videos {
+        display: flex;
+        gap: 2rem;
+
+        & > video {
+          width: 200px;
+          border-radius: 5px;
+        }
+      }
+
+    }
+    
+    /* Estilo do portifolio */
+    & .portifolio {
+      display: flex;
+      flex-direction: column;
+      overflow: clip;
+      background: var(--tertiary);
+      
+      & .portifolio-container {
+        max-width: 1120px;
+        padding: 5rem 10rem;
+        align-items: center;
+
+        & > h2 {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+        & .bar {
+          width: 70px;
+          height: 5px;
+          background: var(--primary);
+          margin: 0.5rem 0 1.5rem 0;
+          border-radius: 5px;
+
+        }
+  
+        & .images {
+          column-count: 6;
+          column-gap: 2rem;
+  
+          & > figure > img {
+            width: 100%;
+            border-radius: 0.5rem;
+          }
+        }
+
+      }
+      
+    }
+  }
+
+  /* Estilo do formulario */
+
+  & .contato {
+    display: flex;
+    /* flex-direction: column; */
+    /* background: red; */
+    /* width: 100%; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem 10rem; */
+
+    & #contato-form {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      /* background-color: var(--color-light-50); */
+      padding: 5rem 10rem;
+      border-radius: 8px;
+      gap: 2rem;
+      /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336); */
+
+      & #form-header {
+        display: flex;
+        align-items: center;
+        
+        & h1 {
+          font-size: 40px;
+          position: relative;
+
+          /* &::before {
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: 3px;
+            background-color: var(--primary);
+            margin-top: 20rem;
+            bottom: 10px;
+            border-radius: 5px;
+          } */
+        }
+
+      }
+
+      /* Extilo inputs */
+
+      & #input,
+      & #msg {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+        gap: 20px;
+
+        & h3 {
+          font-size: 20px;
+        }
+
+        & .input-box > label {
+          font-size: 14px;
+          color: var(--black);
+
+          & .input-field {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 3px;
+            border-bottom: 1px solid var(--secondary);
+            cursor: text;
+
+            & .input-field i {
+              font-size: 18px;
+              cursor: text;
+              color: var(--black);
+            }
+
+            & input {
+              border: none;
+              width: 300px;
+              background-color: transparent;
+              font-size: 16px;
+              padding: 2px 5px;
+  
+              &:focus {
+                  outline: none;
+              }
+            }
+
+
+          }
+
+        }
+      }
+
+      & #msg .text textarea {
+        resize: none;
+        width: 350px;
+        /* background: red; */
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & #button-enviar {
+        border: none;
+        background: var(--primary);
+        padding: 7px;
+        border-radius: 3px;
+        color: var(--color-light-50);
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+    }
+
+  }
+
+}

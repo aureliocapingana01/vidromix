@@ -1,0 +1,34 @@
+:root {
+  --color-light : #f8fafc;
+  --color-dark-50 : #797984;
+  --color-dark-100 : #312d37;
+  --color-black : #000;
+
+  /* --color-gradient: linear-gradient(90deg, var(--color-black), var(--color-dark-100), var(--color-dark-50)); */
+
+}
+
+footer {
+  background: var(--color-dark-100);
+  display: flex;
+  flex-direction: column;
+
+  & #rodape {
+    width: 1120px;
+    height: 120px;
+    margin: auto;
+    /* gap: 20px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+
+    & .footer-info {
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+}
