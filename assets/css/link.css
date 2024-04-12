@@ -1,0 +1,24 @@
+:root {
+  --primary: #4c876f;
+  --secondary: #4a8eab;
+  --tertiary: #b2b2b2;
+  --black: #00050f;
+
+  /* --color-light : #f8fafc;
+  --color-dark-50 : #797984;
+  --color-dark-100 : #312d37;
+  --color-black : #000; */
+
+  --font: "Inter", sans-serif;
+}
+
+#link-topo {
+  text-decoration: none;
+  color: #FFF;
+  background: var(--secondary);
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #000;
+}

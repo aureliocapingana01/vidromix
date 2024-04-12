@@ -173,13 +173,14 @@ main {
 
   & .contato {
     display: flex;
-    /* flex-direction: column; */
-    /* background: red; */
-    /* width: 100%; */
-    /* display: flex; */
+    justify-content: space-between;
     justify-content: center;
     align-items: center;
-    /* padding: 5rem 10rem; */
+
+    & .qrcode img {
+      width: 300px;
+      /* margin-top: 0; */
+    }
 
     & #contato-form {
       display: flex;

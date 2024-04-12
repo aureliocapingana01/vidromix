@@ -6,7 +6,7 @@ header {
 
   & .menu {
     gap: 20px;
-    max-width: 1120px;
+    width: 1120px;
     margin: auto;
     height: 50px;
     display: flex;
@@ -15,12 +15,12 @@ header {
     justify-content: space-between;
 
     & #logo {
-      background-image: url("/assets/img/vidromix-logo.jpg");
-      width: 150px;
+      background-image: url("/assets/img/icons/vidromix-.jpg");
+      width: 130px;
       background-repeat: no-repeat;
-      background-size: cover;
+      /* background-size: cover; */
       background-position: center;
-      display: none;
+      /* display: none; */
     }
     & .menunav {
       display: flex;
