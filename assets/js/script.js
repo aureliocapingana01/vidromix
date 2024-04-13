@@ -28,3 +28,25 @@ const upadateMargin = () => {
 }
 
 setInterval(goNext, 5000)
+
+
+// Script do mode black
+
+const mode = document.getElementById('mode-icon')
+
+mode.addEventListener('click', () => {
+  const body = document.getElementById('modeDark')
+
+  if (mode.classList.contains('fa-moon')) {
+    mode.classList.remove('fa-moon')
+    mode.classList.add('fa-sun')
+    
+    body.classList.add('dark')
+    return
+  }
+  
+  mode.classList.remove('fa-sun')
+  mode.classList.add('fa-moon')
+
+  body.classList.remove('dark')
+})

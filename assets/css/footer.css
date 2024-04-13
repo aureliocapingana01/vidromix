@@ -12,10 +12,8 @@ footer {
   background: var(--color-dark-100);
   display: flex;
   flex-direction: column;
-  /* height: 150px; */
   
   & .rodape {
-    /* background: red; */
     padding: 2rem ;
     display: flex;
     /* justify-content: space-between; */
@@ -28,15 +26,11 @@ footer {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      /* flex: 1; */
 
       & .redes-socias,
       & .localizacao,
       & .saiba-mais {
         width: 300px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* gap: 25px; */
 
         & .redes-socias-titulo h3,
         & .localizacao-titulo h3,
@@ -69,7 +63,6 @@ footer {
           
           & a {
             display: flex;
-            /* justify-content: center; */
             font-size: 14;
 
             & img{
@@ -90,7 +83,5 @@ footer {
           color: #5c5c5c;;
         }
       }
-
   }
-
 }

@@ -14,13 +14,17 @@ header {
     font-weight: 700;
     justify-content: space-between;
 
+    & #mode-icon {
+      cursor: pointer;
+      font-size: 20px;
+    }
+
     & #logo {
-      background-image: url("/assets/img/icons/vidromix-.jpg");
+      background-image: url("/assets/img/icons/Logo\ colorido1.png");
       width: 130px;
       background-repeat: no-repeat;
       /* background-size: cover; */
       background-position: center;
-      /* display: none; */
     }
     & .menunav {
       display: flex;
@@ -52,7 +56,6 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* max-width: 1200px; */
 
       & .slider--control {
         width: 50px;

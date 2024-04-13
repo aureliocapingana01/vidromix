@@ -4,11 +4,6 @@
   --tertiary: #b2b2b2;
   --black: #00050f;
 
-  /* --color-light : #f8fafc;
-  --color-dark-50 : #797984;
-  --color-dark-100 : #312d37;
-  --color-black : #000; */
-
   --font: "Inter", sans-serif;
 }
 /* main */
@@ -126,7 +121,6 @@ main {
           border-radius: 5px;
         }
       }
-
     }
     
     /* Estilo do portifolio */
@@ -151,7 +145,6 @@ main {
           background: var(--primary);
           margin: 0.5rem 0 1.5rem 0;
           border-radius: 5px;
-
         }
   
         & .images {
@@ -163,14 +156,11 @@ main {
             border-radius: 0.5rem;
           }
         }
-
-      }
-      
+      } 
     }
   }
 
   /* Estilo do formulario */
-
   & .contato {
     display: flex;
     justify-content: space-between;
@@ -179,14 +169,12 @@ main {
 
     & .qrcode img {
       width: 300px;
-      /* margin-top: 0; */
     }
 
     & #contato-form {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      /* background-color: var(--color-light-50); */
       padding: 5rem 10rem;
       border-radius: 8px;
       gap: 2rem;
@@ -199,28 +187,13 @@ main {
         & h1 {
           font-size: 40px;
           position: relative;
-
-          /* &::before {
-            position: absolute;
-            content: '';
-            width: 40%;
-            height: 3px;
-            background-color: var(--primary);
-            margin-top: 20rem;
-            bottom: 10px;
-            border-radius: 5px;
-          } */
         }
-
       }
 
       /* Extilo inputs */
-
       & #input,
       & #msg {
         display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
         flex-direction: column;
         gap: 20px;
 
@@ -257,17 +230,13 @@ main {
                   outline: none;
               }
             }
-
-
           }
-
         }
       }
 
       & #msg .text textarea {
         resize: none;
         width: 350px;
-        /* background: red; */
 
         &:focus {
           outline: none;
@@ -288,9 +257,6 @@ main {
           transform: scale(1.05);
         }
       }
-
     }
-
   }
-
 }

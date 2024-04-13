@@ -1,0 +1,49 @@
+:root {
+  --black: #00050f;
+  --color-light : #f8fafc;
+  --color-dark-50 : #797984;
+  --color-dark-100 : #312d37;
+  --color-black : #000; 
+
+  --font: "Inter", sans-serif;
+}
+
+.dark#modeDark{
+  background-color: #000;
+  color: var(--color-light);
+
+  & header .menu .menunav ul li a{
+    color: var(--color-light);
+  }
+
+  & main .sobre-nos {
+    background: var(--color-dark-100);
+  } 
+
+  & .sobre-nos .sobre-nos-cards .sobre-nos-card-visao, 
+  & .sobre-nos .sobre-nos-cards .sobre-nos-card-missao,
+  & .sobre-nos .sobre-nos-cards .sobre-nos-card-valores{
+    background: var(--black);
+  } 
+
+  & main .portifolio {
+    background: var(--color-dark-100);
+  }
+
+  & main .contato #contato-form .input-box > label {
+    color: var(--color-light);
+  }
+  & main .contato #contato-form .input-box > label .input-field {
+    border-bottom: 1px solid var(--color-dark-50);
+  }
+  & main .contato #button-enviar  {
+    background: var(--color-dark-50);
+  }
+  & footer .rodape .rodape-contato .redes-socias-icon,  
+  & footer .rodape .rodape-contato .redes-socias-icon a{
+    color: var(--color-light);
+  }
+  /* & footer .rodape .rodape-contato .redes-socias-icon img {
+    
+  } */
+} 

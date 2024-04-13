@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon">
 
     <!-- Para reset o css -->
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -16,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/link.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="assets/css/modoDark.css">
 
     <!-- Links para usar icones do fontawesome  -->
     <link
@@ -43,10 +41,11 @@
 
     <title>Vidromix</title>
   </head>
-  <body>
+  <body id="modeDark">
     <header>
       <div class="menu">
         <div id="logo"></div>
+        <i id="mode-icon" class="fa-solid fa-moon"></i>
         <nav class="menunav">
           <ul>
             <!-- <li><a href="#" class="fa fa-home"></a></li> -->
@@ -54,7 +53,6 @@
             <li><a href="#servicos-produtos">Nossos Serviços</a></li>
             <li><a href="#portifolio">Portifolio</a></li>
             <li><a href="#contato">Contato</a></li>
-            <i id="mode-icon" class="fa-solid fa-moon"></i>
           </ul>
         </nav>
       </div>
@@ -66,20 +64,15 @@
           <button class="slider--control" onclick="goNext()">
             <img src="assets/img/small-right.png" alt="" />
           </button>
-          <!-- <div class="slider--control" onclick="goPrev()">voltar</div> -->
-          <!-- <div class="slider--control" onclick="goNext()">proxíma</div> -->
         </div>
         <div class="slider--width">
           <div class="slider--item um"></div>
-          <div class="slider--item dois">
-            <!-- Vidromex - soluções de qualidade -->
-          </div>
-          <div class="slider--item tres">
-            <!-- Vidromex - soluções de qualidade -->
-          </div>
+          <div class="slider--item dois"></div>
+          <div class="slider--item tres"></div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="sobre-nos" id="sobre-nos">
         <div class="sobre-nos-container">
@@ -202,8 +195,6 @@
               <figure><img src="/assets/img/image13.jpg" alt="" /></figure>
               <figure><img src="/assets/img/image14.jpg" alt="" /></figure>
               <figure><img src="/assets/img/image15.jpg" alt="" /></figure>
-              <!-- <figure><img src="/assets/img/image1.jpg" alt=""></figure> -->
-              <!-- <figure><img src="/assets/img/image1.jpg" alt=""></figure> -->
             </div>
           </div>
         </div>
@@ -213,14 +204,7 @@
         <form id="contato-form">
           <div id="form-header">
             <h1>Entre em contato</h1>
-            <!-- <i id="mode-icon" class="fa-solid fa-moon"></i> -->
           </div>
-          
-          <!-- <div class="social-media">
-            <a href="#"><img src="assets/img/icons/icons8-facebook-novo-50.png" alt=""></a>
-            <a href="#"><img src="assets/img/icons/icons8-instagram-50.png" alt=""></a>
-            <a href="#"><img src="assets/img/icons/icons8-whatsapp-50.png" alt=""></a>
-          </div>  -->
           
           <div id="input">
             <div class="input-box">
@@ -313,12 +297,8 @@
               </p>
             </div>
           </div>
-
-         
         </div>
-
         <hr>
-
         <div class="autor">
           <p>&COPY; Copyright 2024 - Site criado por <a href="#"><strong>Aurélio Capingana</strong></a></p>
         </div>
