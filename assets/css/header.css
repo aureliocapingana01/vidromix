@@ -1,3 +1,12 @@
+:root {
+  --primary: #4c876f;
+  --secondary: #4a8eab;
+  --tertiary: #b2b2b2;
+  --black: #00050f;
+
+  --font: "Inter", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -5,43 +14,64 @@ header {
   height: 100vh;
 
   & .menu {
-    gap: 20px;
-    width: 1120px;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    padding: 1rem 10rem;
-    font-weight: 700;
-    justify-content: space-between;
+    box-shadow: 0px 3px 10px #464646;
 
-    & #mode-icon {
-      cursor: pointer;
-      font-size: 20px;
-    }
-
-    & #logo {
-      background-image: url("/assets/img/icons/Logo\ colorido1.png");
-      width: 130px;
-      background-repeat: no-repeat;
-      /* background-size: cover; */
-      background-position: center;
-    }
-    & .menunav {
+    & .nav-bar {
+      width: 1120px;
+      gap: 10px;
+      margin: auto;
+      height: 50px;
       display: flex;
-      justify-content: space-around;
+      padding: 1rem 10rem;
+      font-weight: 700;
+      justify-content: space-between;
 
-      & ul {
+      & #logo {
+        background-image: url("/assets/img/icons/Logo\ colorido1.png");
+        width: 100px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: center;
+      }
+      
+      & .menu-item {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-
-        & li {
-          list-style: none;
-          text-transform: uppercase;
+        justify-content: space-between;
+        gap: 10px;
+        
+        & #mode-icon {
+          cursor: pointer;
+          font-size: 20px;
+        }
+        
+        & .menunav {
+          /* display: flex;
+          justify-content: space-around; */
+    
+          & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+    
+            & li {
+              list-style: none;
+              text-transform: uppercase;
+            }
+          }
         }
       }
+
+      /* Estilo do mobile */
+      & .menu-mobile-icon {
+        display: none;
+      }
     }
+
+    & .menu-mobile {
+      display: none;
+    }
+    
   }
 
   /* estilo do slider */
@@ -100,3 +130,88 @@ header {
     }
   }
 }
+
+
+
+/* @media screen and (max-width: 730px)  */
+
+@media (min-width: 600px) and (max-width: 730px) {
+  
+  header {
+   
+    & .menu {
+      box-shadow: 0px 3px 10px #464646;
+  
+      & .nav-bar {
+        margin-bottom: 10px;
+        width: 100%;
+        
+        & .menu-item {
+          & #mode-icon {
+            cursor: pointer;
+            font-size: 20px;
+          }
+          
+          & .menunav {
+            display: none;
+          }
+        }
+  
+        /* Estilo do mobile */
+        & .menu-mobile-icon {
+          display: block;
+
+          & button {
+            background-color: var(--black);
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+  
+      & .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        & li {
+          display: block;
+          padding-top: 1rem;
+        }
+      }
+      
+      /* class do meu hamburg */
+      .open {
+        display: block;
+      }
+    }
+  
+    /* estilo do slider */
+    & .slider {
+
+      & .slider--controls {
+        & .slider--control {
+          width: 30px;
+          height: 30px;
+          font-weight: 700;
+        }
+      } 
+  
+      & .slider--width {
+        height: 100%;
+        display: flex;
+        transition: all ease 0.3s;
+      }
+
+      & .um,
+      & .dois,
+      & .tres {
+        background-position: center right;
+      }
+    }
+  }
+}
+
+
+

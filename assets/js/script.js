@@ -50,3 +50,18 @@ mode.addEventListener('click', () => {
 
   body.classList.remove('dark')
 })
+
+
+// Script do meu 
+const meuShow = () => {
+  let menuMobile = document.querySelector('.menu-mobile')
+
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open')
+    document.querySelector('.icon').src = "assets/img/icons/menu_white_36dp.svg"
+    
+  } else {
+    menuMobile.classList.add('open')
+    document.querySelector('.icon').src = "assets/img/icons/close_white_36dp.svg"
+  }
+}

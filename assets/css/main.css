@@ -260,3 +260,165 @@ main {
     }
   }
 }
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 730px) {
+
+  main {
+   
+    & .sobre-nos {
+      padding: 2rem 5rem;
+      width: 100%;
+  
+      & .sobre-nos-container {
+  
+        & > span {
+          font-size: 1rem;
+        }
+  
+        & > p {
+          font-size: 0.9rem;
+        }
+      }
+  
+      /* Estilo sobre nos cards */
+      & .sobre-nos-cards {
+        flex-direction: column;
+  
+        & .sobre-nos-card-visao,
+        & .sobre-nos-card-missao,
+        & .sobre-nos-card-valores {
+  
+          & > h3 {
+            font-size: 1rem;
+          }
+          
+          & > p{
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  
+    /* Estio Produtos e servicos */
+    & .servicos-produtos {
+      /* display: flex;
+      flex-direction: column; */
+      
+      & .servicos {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        & .servicos-itens {
+          gap: 5rem; */
+          
+          & .servicos-item-left,
+          & .servicos-item-right {
+            
+            & ul {
+              list-style-type: "\2714\00A0\00A0";
+              list-style-position: inside;
+              
+              & li {
+                font-size: 1rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+  
+        /* Estilo do servicos videos */
+        & .servicos-videos {
+          gap: 5rem;
+        } 
+      }
+      
+      /* Estilo do portifolio */
+      & .portifolio {
+    
+        & .portifolio-container {
+         
+          width: 100%;
+          padding: 2rem 5rem;
+          
+          & > h2 {
+            font-size: 1.2rem;
+          }
+    
+          & .images {
+            column-count: 4;
+           
+          } 
+        } 
+      }
+    }
+  
+    /* Estilo do formulario */
+    & .contato {
+      gap: 2rem;
+      padding: 2rem 5rem;
+      width: 100%;
+      flex-direction: column;
+  
+      & .qrcode img {
+        width: 200px;
+      }
+  
+      & #contato-form {
+        padding: 2rem;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  
+        & #form-header {
+          
+          & h1 {
+            font-size: 20px;
+          }
+        }
+  
+        /* Extilo inputs */
+        & #input,
+        & #msg {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+  
+          & h3 {
+            font-size: 18px;
+          }
+  
+          & .input-box > label {
+            font-size: 13px;
+            /* color: var(--black); */
+  
+            & .input-field {
+              gap: 10px;
+  
+              & .input-field i {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+  
+        & #msg .text textarea {
+          width: 300px;
+        }
+  
+        & #button-enviar {
+          width: 100%;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  
+}

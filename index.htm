@@ -41,21 +41,42 @@
 
     <title>Vidromix</title>
   </head>
+
   <body id="modeDark">
     <header>
       <div class="menu">
-        <div id="logo"></div>
-        <i id="mode-icon" class="fa-solid fa-moon"></i>
-        <nav class="menunav">
+        <div class="nav-bar">
+          <div id="logo"></div>
+
+          <div class="menu-item">
+            <i id="mode-icon" class="fa-solid fa-moon"></i>
+
+            <nav class="menunav">
+              <ul>
+                <!-- <li><a href="#" class="fa fa-home"></a></li> -->
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#servicos-produtos">Nossos Serviços</a></li>
+                <li><a href="#portifolio">Portifolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="menu-mobile-icon">
+            <button onclick="meuShow()"><img src="assets/img/icons/menu_white_36dp.svg" alt=""></button>
+          </div>
+        </div>
+
+        <div class="menu-mobile">
           <ul>
-            <!-- <li><a href="#" class="fa fa-home"></a></li> -->
             <li><a href="#sobre-nos">Sobre Nós</a></li>
             <li><a href="#servicos-produtos">Nossos Serviços</a></li>
             <li><a href="#portifolio">Portifolio</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
-        </nav>
+        </div> 
       </div>
+
       <div class="slider">
         <div class="slider--controls">
           <button class="slider--control" onclick="goPrev()">
