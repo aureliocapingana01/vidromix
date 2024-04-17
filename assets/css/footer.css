@@ -165,7 +165,7 @@ footer {
 
 
 
-@media (min-width: 375px) and (max-width: 599px) {
+@media (min-width: 370px) and (max-width: 599px) {
 
   
 footer {
@@ -178,7 +178,7 @@ footer {
   height: auto;
   
   & .rodape {
-    padding: 0.9rem ;
+    padding: 0.5rem ;
     /* display: flex; */
     justify-content: center;
     width: 100%;
@@ -189,7 +189,7 @@ footer {
     & .rodape-contato {
       display: flex;
       justify-content: space-between;
-      gap: 00px;
+      gap: 5px;
 
       & .redes-socias,
       & .localizacao,
