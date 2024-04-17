@@ -226,6 +226,7 @@ header {
     /* font-family: var(--font); */
     height: 50vh;
     width: 100%;
+    /* display: none; */
   
     & .menu {
       /* box-shadow: 0px 3px 10px #464646; */
@@ -333,6 +334,8 @@ header {
   
     /* estilo do slider */
     & .slider {
+      /* width: 100%; */
+      /* display: none; */
       /* flex: 1;
       overflow: hidden;
    */
@@ -347,6 +350,7 @@ header {
         & .slider--control {
           width: 25px;
           height: 25px;
+          display: none;
           /* color: var(--black); */
           /* background-color: var(--tertiary);
           border-radius: 50%;

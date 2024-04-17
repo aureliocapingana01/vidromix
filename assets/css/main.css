@@ -432,10 +432,12 @@ main {
 main {
   /* display: flex; */
   /* flex-direction: column; */
+  width: 100vw;
 
   /* Estilo sobre nos */
   & .sobre-nos {
     padding: 2rem;
+    /* display: none; */
     /* background: var(--primary); */
     /* margin: auto; */
 
@@ -488,6 +490,7 @@ main {
 
   /* Estio Produtos e servicos */
   & .servicos-produtos {
+    /* display: none; */
     display: flex;
     flex-direction: column;
     
@@ -540,6 +543,7 @@ main {
         /* justify-content: center; */
         /* align-items: center; */
         gap: 1rem;
+        /* display: none; */
 
         /* & > video {
           width: 200px;
@@ -551,6 +555,7 @@ main {
     /* Estilo do portifolio */
     & .portifolio {
       display: flex;
+      /* display: none; */
       flex-direction: column;
       overflow: clip;
       background: var(--tertiary);
@@ -587,7 +592,7 @@ main {
 
   /* Estilo do formulario */
   & .contato {
-    /* display: flex; */
+    display: none;
     flex-direction: column;
     /* justify-content: center; */
     justify-content: center;
