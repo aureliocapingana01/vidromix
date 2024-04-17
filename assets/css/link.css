@@ -22,3 +22,11 @@
   bottom: 10px;
   box-shadow: 3px 3px 10px #000;
 }
+
+
+
+@media (min-width: 368px) and (max-width: 599px) {
+#link-topo {
+  display: none;
+}
+}
