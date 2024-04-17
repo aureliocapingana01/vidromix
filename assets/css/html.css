@@ -16,6 +16,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: var(--font);
+}
+
 a {
   text-decoration: none;
   color: var(--black);
@@ -23,8 +35,24 @@ a {
 strong {
   font-weight: 700;
 }
-body {
-  font-family: var(--font);
-  /* background: #fff; */
-  /* color: var(--black); */
+footer {
+  margin-top: auto;
 }
+
+
+
+/* Para deixar o footer sempre por baixo 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}*/

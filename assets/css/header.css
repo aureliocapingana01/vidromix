@@ -174,8 +174,10 @@ header {
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
-
+        background: #fff;
+        
         & li {
+          /* color: #fff; */
           display: block;
           padding-top: 1rem;
         }
@@ -211,6 +213,181 @@ header {
       }
     }
   }
+}
+
+
+
+
+@media (min-width: 380px) and (max-width: 599px) {
+  
+  header {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* font-family: var(--font); */
+    height: 50vh;
+    width: 100%;
+  
+    & .menu {
+      /* box-shadow: 0px 3px 10px #464646; */
+  
+      & .nav-bar {
+        width: 100%;
+        gap: 10px;
+        /* margin: auto; */
+        /* height: 50px; */
+        /* display: flex; */
+        padding: 0.9rem;
+        /* justify-content: center; */
+        /* align-items: center; */
+        font-weight: 500;
+        justify-content: space-around;
+  
+        & #logo {
+          background-image: url("/assets/img/icons/Logo\ colorido1.png");
+          width: 100px;
+          /* background-repeat: no-repeat; */
+          /* background-size: cover; */
+          /* background-position: left; */
+        }
+        
+        & .menu-item {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          
+          & #mode-icon {
+            cursor: pointer;
+            font-size: 20px;
+          }
+          
+          & .menunav {
+            /* display: flex;
+            justify-content: space-around; */
+            display: none;
+      
+            & ul {
+              /* display: flex;
+              justify-content: center;
+              align-items: center; */
+              gap: 20px;
+      
+              /* & li {
+                list-style: none;
+                text-transform: uppercase;
+              } */
+            }
+          }
+        }
+
+
+            /* Estilo do mobile */
+            & .menu-mobile-icon {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+    
+              & button {
+                background-color: var(--black);
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+      
+          & .menu-mobile ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1rem;
+            background: #fff;
+            
+            & li {
+              /* color: #fff; */
+              display: block;
+              padding-top: 1rem;
+            }
+          }
+          
+          /* class do meu hamburg */
+          .open {
+            display: block;
+          }
+
+  
+        /* Estilo do mobile */
+        /* & .menu-mobile-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        }
+      } */
+  
+      /* & .menu-mobile {
+        display: none;
+      } */
+      
+    }
+  
+    /* estilo do slider */
+    & .slider {
+      /* flex: 1;
+      overflow: hidden;
+   */
+      & .slider--controls {
+        /* position: absolute;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   */
+        & .slider--control {
+          width: 25px;
+          height: 25px;
+          /* color: var(--black); */
+          /* background-color: var(--tertiary);
+          border-radius: 50%;
+          overflow: hidden;
+          cursor: pointer; */
+        }
+      }
+  
+      & .slider--width {
+        height: 100%;
+        display: flex;
+        transition: all ease 0.3s;
+      }
+  
+      & .um {
+        background-image: url("/assets/img/image1.jpg");
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+      }
+      & .dois {
+        background-image: url("/assets/img/image10.jpg");
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+      }
+      & .tres {
+        background-image: url("/assets/img/image15.jpg");
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+      }
+  
+      & .slider--item {
+        width: 100vw;
+        height: inherit; /* para herdar a altura do pai */
+        background-position: center;
+      }
+    }
+  }
+
 }
 
 
