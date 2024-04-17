@@ -592,18 +592,21 @@ main {
     /* justify-content: center; */
     justify-content: center;
     /* align-items: center; */
+    padding: 1rem;
 
     & .qrcode img {
-      width: 200px;
+      width: 180px;
     }
 
     & #contato-form {
       /* display: flex;
       flex-direction: column;
       height: fit-content; */
-      padding: 2rem;
       /* border-radius: 8px; */
-      gap: 2rem;
+      /* width: 100vw; */
+      /* flex-direction: ; */
+      /* align-items: center; */
+      gap: 1rem;
       /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336); */
 
       & #form-header {
@@ -611,7 +614,7 @@ main {
         align-items: center; */
         
         & h1 {
-          font-size: 20px;
+          font-size: 18px;
           text-align: center;
           /* position: relative; */
         }

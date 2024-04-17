@@ -172,10 +172,10 @@ footer {
   /* background: var(--color-dark-100);
   display: flex;
   flex-direction: column; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* margin-top: 10px; */
   width: 100%;
-  height: 570px;
+  height: auto;
   
   & .rodape {
     padding: 0.9rem ;
