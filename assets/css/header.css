@@ -218,7 +218,7 @@ header {
 
 
 
-@media (min-width: 380px) and (max-width: 599px) {
+@media (min-width: 375px) and (max-width: 599px) {
   
   header {
     /* display: flex; */
